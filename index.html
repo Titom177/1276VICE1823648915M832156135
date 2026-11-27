@@ -391,7 +391,7 @@ footer .qc { margin-top: 4px; font-size: 12px; opacity: .85; }
 // played through Web Audio so wrapping around is sample-accurate. Starts after the language click,
 // 10% volume by default, can be turned off with the button in the top bar (choice is remembered).
 var Music = (function () {
-  var VOL = 0.03, ctx = null, gain = null, buf = null, src = null, offset = 0, startedAt = 0, loading = null, fadeT = null, wanted = true, vol = 0;
+  var VOL = 0.08, ctx = null, gain = null, buf = null, src = null, offset = 0, startedAt = 0, loading = null, fadeT = null, wanted = true, vol = 0;
   try { wanted = localStorage.getItem('vicem-music') !== 'off'; } catch (e) {}
   function bytes() {
     var s = atob(document.getElementById('musicdata').textContent.trim()), u = new Uint8Array(s.length);
